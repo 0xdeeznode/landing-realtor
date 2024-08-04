@@ -7,20 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['"Poppins"', 'sans-serif'],
-      },
       colors: {
         gold: {
           light: '#F7C873',
-          DEFAULT: '#DAA520',
+          DEFAULT: '#AD823B',
           dark: '#B8860B',
         },
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        bona: ['var(--font-bona)'],  // Titles
+        cormorant: ['var(--font-cormorant)'],  // Body
+        roboto: ['var(--font-roboto)'],  // Clickables
       },
     },
   },

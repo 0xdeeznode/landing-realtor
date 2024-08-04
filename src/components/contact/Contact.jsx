@@ -1,18 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
+import ContactInfo from './ContactInfo'
 
 const Contact = () => {
-  return (
+return (
     <div className='flex flex-col'>
-        <Image 
-        src='/Alan-1.jpg'
-        alt='Real Estate Agent Alan Profile Picture; Alan has black hair, a big smile, and wearing a blue shirt'
-        width={500}
-        height={300}
-        />
-        Contact
+        <ContactInfo />
+
     </div>
-  )
+)
 }
 
 export default Contact

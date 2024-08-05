@@ -1,28 +1,10 @@
-import Image from 'next/image'
 import React from 'react'
+import Slider from './Slider'
 
 const Showroom = () => {
   return (
     <section className="flex w-full">
-      <div id="card" className="flex flex-col ">
-        <Image 
-        src=""
-        />
-        <div className="flex flex-col ">
-          <h2>
-            Community Name
-          </h2>
-          <h3>
-            Cluster Name
-          </h3>
-          <p>
-            Details Lorem Ipsum Sinhe
-          </p>
-        </div>
-        
-        
-      </div>
-      
+      <Slider />
     </section>
   )
 }

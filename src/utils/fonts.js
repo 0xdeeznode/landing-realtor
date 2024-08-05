@@ -1,4 +1,4 @@
-import { Bona_Nova, Cormorant_Garamond, Roboto_Condensed } from 'next/font/google'
+import { Bona_Nova, Titillium_Web, Roboto_Slab } from 'next/font/google'
 
 
 const bona_init = Bona_Nova({
@@ -7,19 +7,19 @@ const bona_init = Bona_Nova({
     variable: '--font-bona',
 })
 
-const cormorant_init = Cormorant_Garamond({
+const titillium_init = Titillium_Web({
     subsets: ['latin'],
     weight: '400',
-    variable: '--font-cormorant',
+    variable: '--font-titillium',
 })
 
-const roboto_init = Roboto_Condensed({
+const robotoslab_init = Roboto_Slab({
     subsets: ['latin'],
     weight: '400',
-    variable: '--font-roboto',
+    variable: '--font-robotoslab',
 })
 
 
 export const bona = bona_init.variable;
-export const cormorant = cormorant_init.variable;
-export const roboto = roboto_init.variable;
+export const titillium = titillium_init.variable;
+export const robotoslab = robotoslab_init.variable;

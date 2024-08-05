@@ -22,7 +22,7 @@ const ContactInfo = () => {
             <a href="mailto:alduran.uae@gmail.com" className="text-white" itemprop="email">alduran.uae@gmail.com</a>
           </div>
         </div>
-        <a href="https://calendly.com/alduran_realestate/property-consultation" target="_blank" className="bg-gold hover:bg-gold-light text-white font-bold font-roboto p-2 rounded">
+        <a href="https://calendly.com/alduran_realestate/property-consultation" target="_blank" className="bg-gold hover:bg-gold-light text-white font-bold font-robotoslab p-2 rounded">
           Schedule Zoom Meeting
         </a>
       </div>     

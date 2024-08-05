@@ -16,8 +16,8 @@ module.exports = {
       },
       fontFamily: {
         bona: ['var(--font-bona)'],  // Titles
-        cormorant: ['var(--font-cormorant)'],  // Body
-        roboto: ['var(--font-roboto)'],  // Clickables
+        cormorant: ['var(--font-titillium)'],  // Body
+        roboto: ['var(--font-robotoslab)'],  // Clickables
       },
     },
   },

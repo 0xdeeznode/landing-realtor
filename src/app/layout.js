@@ -1,4 +1,4 @@
-import { bona, cormorant, roboto } from "@/utils/fonts";
+import { bona, titillium, robotoslab } from "@/utils/fonts";
 import "./globals.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bona} ${cormorant} ${roboto}`}>
+      <body className={`${bona} ${titillium} ${robotoslab}`}>
         {children}
       </body>
     </html>

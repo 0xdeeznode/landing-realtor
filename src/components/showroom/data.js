@@ -10,15 +10,4 @@ export const projects = [
       { symbol: 'GBP', value: '212K' },
     ],
   },
-  {
-    img: 'path/to/image1.jpg',
-    community: 'Community 1',
-    location: 'Location 1',
-    price: [
-      { symbol: 'AED', value: '1,000,000' },
-      { symbol: 'USD', value: '272,000' },
-      { symbol: 'EUR', value: '250,000' },
-      { symbol: 'GBP', value: '220,000' },
-    ],
-  },
 ];

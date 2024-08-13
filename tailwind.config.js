@@ -16,10 +16,24 @@ module.exports = {
       },
       fontFamily: {
         bona: ['var(--font-bona)'],  // Titles
-        cormorant: ['var(--font-titillium)'],  // Body
-        roboto: ['var(--font-robotoslab)'],  // Clickables
+        titillium: ['var(--font-titillium)'],  // Body
+        robotoslab: ['var(--font-robotoslab)'],  // Clickables
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.glass-effect': {
+          'background-color': 'rgba(255, 255, 255, 0.2)',
+          'backdrop-filter': 'blur(10px)',
+          '-webkit-backdrop-filter': 'blur(5px)', // For Safari support
+          'box-shadow': '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)',
+          'border-radius': '0.475rem', // Tailwind's default rounded-md
+        },
+      }
+
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    },
+  ],
 };

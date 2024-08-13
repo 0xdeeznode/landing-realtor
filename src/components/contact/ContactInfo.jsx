@@ -7,9 +7,9 @@ const ContactInfo = () => {
       <Image
         src='/Alan-1.jpg'
         alt='Real Estate Agent Alan Profile Picture; Alan has black hair, a big smile, and wearing a blue shirt'
-        width={120}
-        height={70}
-        className='rounded-full'
+        width={95}
+        height={25}
+        className='rounded-lg'
       />
       <div className='flex flex-col gap-3'>
         <div className='flex flex-col gap-2'>
@@ -22,7 +22,7 @@ const ContactInfo = () => {
             <a href="mailto:alduran.uae@gmail.com" className="text-white" itemprop="email">alduran.uae@gmail.com</a>
           </div>
         </div>
-        <a href="https://calendly.com/alduran_realestate/property-consultation" target="_blank" className="bg-gold hover:bg-gold-light text-white font-bold font-robotoslab p-2 rounded">
+        <a href="https://calendly.com/alduran_realestate/property-consultation" target="_blank" className="bg-gold hover:bg-gold-light text-white font-robotoslab p-2 rounded">
           Schedule Zoom Meeting
         </a>
       </div>     

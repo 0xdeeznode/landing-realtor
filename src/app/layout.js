@@ -1,6 +1,7 @@
 import { bona, titillium, robotoslab } from "@/utils/fonts";
 import "./globals.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Footer from "@/components/footer/Footer";
 
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${bona} ${titillium} ${robotoslab}`}>
         {children}
+        <Footer />
       </body>
     </html>
   );

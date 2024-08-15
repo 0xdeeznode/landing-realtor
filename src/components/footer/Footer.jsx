@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section className='flex flex-col items-center justify-evenly w-full h-56 border bg-[#d0cfd5]'>
+    <footer className='flex flex-col items-center justify-evenly w-full h-56 border bg-[#d0cfd5]'>
         <div className='flex flex-col items-center'>
             <p className='text-lg font-titillium'>&copy; {new Date().getFullYear()} Al Duran Real Estate.</p>
             <p>All Rights Reserved.</p>
@@ -29,7 +29,7 @@ const Footer = () => {
                 </svg>
             </a>
         </div>
-    </section>
+    </footer>
   )
 }
 

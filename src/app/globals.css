@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+  background: linear-gradient(to bottom, #404040, #121212);
+*/
+
 :root {
   --gold: #AD823B;
   --silver: #c0c0c0;

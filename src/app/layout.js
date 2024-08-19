@@ -3,6 +3,7 @@ import "./globals.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Footer from "@/components/footer/Footer";
 import Contact from "@/components/contact/Contact";
+import Header from "@/components/header/Header";
 
 
 export const metadata = {

@@ -1,0 +1,1 @@
+export const whyInvestInDubai = "Dubai real estate offers tax-free income, high rental yields, and strong capital growth in a stable, globally connected market. With world-class infrastructure and a growing population, it is an ideal investment opportunity in one of the worlds most dynamic cities."

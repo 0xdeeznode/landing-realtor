@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className='relative flex bg-[#d0cfd5]'>
-      <div className='flex flex-col items-center justify-evenly w-full mb-16 h-56'>
+      <div className='flex flex-col items-center justify-evenly w-full md:mb-16 h-56'>
         <div className='flex flex-col items-center'>
           <p className='text-lg font-titillium'>&copy; {new Date().getFullYear()} Al Duran Real Estate.</p>
           <p>All Rights Reserved.</p>

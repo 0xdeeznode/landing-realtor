@@ -25,6 +25,7 @@ const Hero = () => {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute inset-0 w-full h-full hidden md:block object-cover pointer-events-none"
       >
         <source src="/desktop-hero-vid.mp4" type="video/mp4" />
@@ -44,7 +45,7 @@ const Hero = () => {
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50" />
+      <div className="absolute inset-0 bg-black bg-opacity-45" />
 
       {/* Content */}
       <div className="relative text-white px-3">

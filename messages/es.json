@@ -8,7 +8,7 @@
     },
     "Hero": {
         "title": "Descubra Oportunidades Inmobiliarias Lucrativas",
-        "subtitle": "Explore la amplia gama de proyectos, con asesoria profesional local.",
+        "subtitle": "Explore la amplia gama de proyectos con acompañamiento profesional.",
         "button": "Ver Proyectos"
     },
     "Why": {
@@ -18,5 +18,8 @@
     "ContactInfo": {
         "call-button": "Llamada",
         "enquiry-button": "Consulta"
+    },
+    "Footer": {
+        "rights": "Todos los derechos reservados"
     }
 }

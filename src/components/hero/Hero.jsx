@@ -1,10 +1,12 @@
 'use client';
 
+import {useTranslations} from 'next-intl';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Header from '../header/Header';
 
 const Hero = () => {
+  const t = useTranslations('Hero');
   const titleRef = useRef(null);
 
   useEffect(() => {
@@ -46,9 +48,9 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative text-white px-3">
-        <h1 ref={titleRef} className="text-4xl md:text-5xl font-semibold font-bona">Unlock Lucrative Property Opportunities</h1>
-        <p className="mt-4 text-lg md:text-xl font-titillium px-10">Explore luxury properties and make your move today.</p>
-        <button className="mt-8 px-6 py-3 text-white rounded-lg font-robotoslab glass-effect">View Listings</button>
+        <h1 ref={titleRef} className="text-4xl md:text-5xl font-semibold font-bona">{t('title')}</h1>
+        <p className="mt-4 text-lg md:text-xl font-titillium px-10">{t('subtitle')}</p>
+        <button className="mt-8 px-6 py-3 text-white rounded-lg font-robotoslab glass-effect">{t('button')}</button>
       </div>
     </section>
   );

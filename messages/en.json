@@ -18,5 +18,8 @@
     "ContactInfo": {
         "call-button": "Call",
         "enquiry-button": "Enquiry"
+    },
+    "Footer": {
+        "rights": "All rights reserved"
     }
 }

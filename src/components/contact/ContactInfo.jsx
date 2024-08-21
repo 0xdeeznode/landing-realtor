@@ -1,19 +1,22 @@
 'use client';
+
+import {useTranslations} from 'next-intl';
 import React, { useState, useEffect } from 'react';
 
 const ContactInfo = () => {
+  const t = useTranslations('ContactInfo');
   const [isVisible, setIsVisible] = useState(true);
   let lastScrollTop = 0;
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop) {
         // Scrolling down
-        setIsVisible(true);
+        setIsVisible(false);
       } else {
         // Scrolling up
-        setIsVisible(false);
+        setIsVisible(true);
       }
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     };
@@ -31,7 +34,7 @@ const ContactInfo = () => {
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-telephone" viewBox="0 0 16 16">
               <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
             </svg>
-            <p className='text-xs uppercase'>Call</p>
+            <p className='text-xs uppercase'>{t('call-button')}</p>
           </a>
         </div>
         <div className='w-[1px] border-l-[1px] border-white' />
@@ -59,7 +62,7 @@ const ContactInfo = () => {
               <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
               <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
             </svg>
-            <p className='text-xs uppercase'>Enquiry</p>
+            <p className='text-xs uppercase'>{t('enquiry-button')}</p>
           </a>
         </div>
       </div>

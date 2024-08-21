@@ -1,8 +1,10 @@
 'use client';
+import {useTranslations} from 'next-intl';
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
 const Header = () => {
+  const t = useTranslations('Header');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState('en'); // Default to English
   const menuRef = useRef(null);
@@ -22,15 +24,17 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const toggleLanguage = () => {
-    gsap.fromTo(
-      menuRef.current,
-      { rotateY: 0 },
-      { rotateY: 180, duration: 0.6, ease: 'power2.out', onComplete: () => {
-        setLanguage(language === 'en' ? 'es' : 'en');
-        gsap.to(menuRef.current, { rotateY: 0, duration: 0.6, ease: 'power2.out' });
-      } }
-    );
+  const changeLanguage = (lang) => {
+    // Animate the language change
+    gsap.to(menuRef.current, { rotateY: 90, duration: 0.3, ease: 'power2.out', onComplete: () => {
+      setLanguage(lang);
+
+      // Close the menu
+      setIsMenuOpen(false);
+
+      // Reset rotation and animate back
+      gsap.to(menuRef.current, { rotateY: 0, duration: 0.3, ease: 'power2.out' });
+    }});
   };
 
   return (
@@ -42,7 +46,7 @@ const Header = () => {
       </button>
       <div className='flex flex-col items-center'>
         <h3 className='text-xl md:text-2xl font-semibold md:font-normal font-bona'>ALDURAN</h3>
-        <h1 className='text-center text-md font-robotoslab'>Dubai Real Estate Investments</h1>
+        <h1 className='text-center text-md font-robotoslab'>{t('title')}</h1>
       </div>
       <button>
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
@@ -64,19 +68,23 @@ const Header = () => {
           </button>
 
           {/* Language Toggle Button */}
-          <button onClick={toggleLanguage} className="flex items-center">
-            {language === 'en' ? (
-              <img src="/english-flag.png" alt="English" className="w-7 h-5" />
-            ) : (
-              <img src="/spanish-flag.png" alt="Spanish" className="w-7 h-5" />
-            )}
-          </button>
+          <div className="flex items-center space-x-2">
+            <button onClick={() => changeLanguage('en')}>
+              <img src="/english-flag.png" alt="English" className={`w-7 h-5 ${language === 'en' ? 'opacity-100' : 'opacity-50'}`} />
+            </button>
+            <button onClick={() => changeLanguage('es')}>
+              <img src="/spanish-flag.png" alt="Spanish" className={`w-7 h-5 ${language === 'es' ? 'opacity-100' : 'opacity-50'}`} />
+            </button>
+            <button onClick={() => changeLanguage('pt')}>
+              <img src="/portuguese-flag.png" alt="Portuguese" className={`w-7 h-5 ${language === 'pt' ? 'opacity-100' : 'opacity-50'}`} />
+            </button>
+          </div>
         </div>
         <nav className='flex flex-col items-center p-4 space-y-4'>
-          <a href="#home" className='text-lg hover:text-gray-400'>Home</a>
-          <a href="#about" className='text-lg hover:text-gray-400'>About</a>
-          <a href="#services" className='text-lg hover:text-gray-400'>Services</a>
-          <a href="#contact" className='text-lg hover:text-gray-400'>Contact</a>
+          <a href="#home" className='text-lg hover:text-gray-400'>{t('home-button')}</a>
+          <a href="#about" className='text-lg hover:text-gray-400'>{t('about-button')}</a>
+          <a href="#services" className='text-lg hover:text-gray-400'>{t('services-button')}</a>
+          <a href="#contact" className='text-lg hover:text-gray-400'>{t('contact-button')}</a>
         </nav>
       </div>
 

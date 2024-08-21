@@ -46,7 +46,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative text-white px-3">
-        <h1 ref={titleRef} className="text-4xl md:text-5xl font-semibold font-bona">Find Your Dream Home in Dubai</h1>
+        <h1 ref={titleRef} className="text-4xl md:text-5xl font-semibold font-bona">Unlock Lucrative Property Opportunities</h1>
         <p className="mt-4 text-lg md:text-xl font-titillium px-10">Explore luxury properties and make your move today.</p>
         <button className="mt-8 px-6 py-3 text-white rounded-lg font-robotoslab glass-effect">View Listings</button>
       </div>

@@ -4,7 +4,7 @@ import Why from './Why'
 const About = () => {
   return (
     <section className='w-full'>
-        <Why />
+      <Why />
     </section>
   )
 }

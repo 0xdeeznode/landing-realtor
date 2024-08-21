@@ -1,10 +1,10 @@
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import { bona, titillium, robotoslab } from "@/utils/fonts";
-import "./globals.css";
+import './globals.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Footer from "@/components/footer/Footer";
 import Contact from "@/components/contact/Contact";
-import Header from "@/components/header/Header";
-
 
 export const metadata = {
   title: "Dubai Real Estate | Buy, Sell, Rent & Invest in Properties",
@@ -13,13 +13,20 @@ export const metadata = {
   author: "AlDuran Real Estate",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
+  const { locale } = params;
+
+  // Load the appropriate messages for the current locale
+  const messages = await getMessages(locale);
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${bona} ${titillium} ${robotoslab}`}>
-        {children}
-        <Footer />
-        <Contact />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+          <Footer />
+          <Contact />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

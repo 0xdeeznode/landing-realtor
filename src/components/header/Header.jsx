@@ -42,7 +42,7 @@ const Header = () => {
       </button>
       <div className='flex flex-col items-center'>
         <h3 className='text-xl md:text-2xl font-semibold md:font-normal font-bona'>ALDURAN</h3>
-        <h1 className='text-center text-md font-robotoslab'>Dubai Real Estate Investment</h1>
+        <h1 className='text-center text-md font-robotoslab'>Dubai Real Estate Investments</h1>
       </div>
       <button>
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">

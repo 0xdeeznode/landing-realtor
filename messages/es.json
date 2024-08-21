@@ -1,0 +1,22 @@
+{
+    "Header": {
+        "title": "Inversiones inmobiliarias en Dubái",
+        "home-button": "Pagina Principal",
+        "about-button": "Acerca de",
+        "services-button": "Servicios",
+        "contact-button": "Contacto"
+    },
+    "Hero": {
+        "title": "Descubra Oportunidades Inmobiliarias Lucrativas",
+        "subtitle": "Explore la amplia gama de proyectos, con asesoria profesional local.",
+        "button": "Ver Proyectos"
+    },
+    "Why": {
+        "title": "Por qué en Dubai",
+        "body": "El mercado inmobiliario de Dubái ofrece ingresos libres de impuestos, altos rendimientos por alquiler y un fuerte crecimiento del capital en un mercado estable y conectado a nivel mundial. Con una infraestructura de primera clase y una población en crecimiento, es una oportunidad de inversión ideal en una de las ciudades más dinámicas del mundo."
+    },
+    "ContactInfo": {
+        "call-button": "Llamada",
+        "enquiry-button": "Consulta"
+    }
+}

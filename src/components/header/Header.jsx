@@ -1,12 +1,15 @@
 'use client';
-import {useTranslations} from 'next-intl';
-import React, { useState, useEffect, useRef } from 'react';
+import {useLocale, useTranslations} from 'next-intl';
+import React, { useState, useEffect, useRef, useTransition } from 'react';
 import { gsap } from 'gsap';
+import { useRouter } from 'next/navigation';
 
 const Header = () => {
+  const router = useRouter();
   const t = useTranslations('Header');
+  const localActive = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [language, setLanguage] = useState('en'); // Default to English
+  const [language, setLanguage] = useState(localActive); // Default
   const menuRef = useRef(null);
   const overlayRef = useRef(null);
 
@@ -25,12 +28,18 @@ const Header = () => {
   };
 
   const changeLanguage = (lang) => {
+    //const [ isPending, startTransition ] = useTransition();
+
     // Animate the language change
     gsap.to(menuRef.current, { rotateY: 90, duration: 0.3, ease: 'power2.out', onComplete: () => {
       setLanguage(lang);
 
       // Close the menu
       setIsMenuOpen(false);
+
+      // Redirect to the selected language route
+      const nextLocale = lang;
+      router.replace(`/${nextLocale}`)
 
       // Reset rotation and animate back
       gsap.to(menuRef.current, { rotateY: 0, duration: 0.3, ease: 'power2.out' });

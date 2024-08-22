@@ -48,10 +48,10 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-45" />
 
       {/* Content */}
-      <div className="relative text-white px-3">
+      <div className="relative text-white px-2">
         <h1 ref={titleRef} className="text-4xl md:text-5xl font-semibold font-bona">{t('title')}</h1>
         <p className="mt-4 text-lg md:text-xl font-titillium px-10">{t('subtitle')}</p>
-        <button className="mt-8 px-6 py-3 text-white rounded-lg font-robotoslab glass-effect">{t('button')}</button>
+        <button className="mt-8 px-6 py-3 rounded-lg font-robotoslab glass-effect">{t('button')}</button>
       </div>
     </section>
   );

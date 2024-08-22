@@ -5,6 +5,9 @@
 /* 
   background: linear-gradient(to bottom, #404040, #121212);
 */
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --gold: #AD823B;

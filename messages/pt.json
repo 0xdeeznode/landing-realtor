@@ -12,8 +12,13 @@
         "button": "Ver Listagens"
     },
     "Why": {
-        "title": "Por que investir em Dubai?",
-        "body": "O mercado imobiliário de Dubai oferece renda isenta de impostos, altos rendimentos de aluguel e forte crescimento de capital em um mercado estável e conectado globalmente. Com infraestrutura de classe mundial e uma população crescente, é uma oportunidade de investimento ideal em uma das cidades mais dinâmicas do mundo."
+        "header": "Por que investir em Dubai?",
+        "title-1": "Centro Global",
+        "body-1": "Dubai, um centro global com uma população diversificada e economia forte, conecta Oriente e Ocidente. Oferece oportunidades de alto retorno para investidores com sua infraestrutura robusta e mercado imobiliário dinâmico.",
+        "title-2": "Crescimento do Mercado",
+        "body-2": "Os preços imobiliários em Dubai subiram mais de 30% na última década, atraindo investidores internacionais com fortes retornos.",
+        "title-3": "Investimentos Livres de Impostos",
+        "body-3 ":"Dubai oferece investimentos imobiliários isentos de impostos, sem impostos sobre a propriedade ou ganhos de capital, atraindo investidores internacionais."
     },
     "ContactInfo": {
         "call-button": "Ligar",

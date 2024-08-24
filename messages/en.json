@@ -12,8 +12,13 @@
         "button": "View Listings"
     },
     "Why": {
-        "title": "Why invest in Dubai?",
-        "body": "Dubai real estate offers tax-free income, high rental yields, and strong capital growth in a stable, globally connected market. With world-class infrastructure and a growing population, it is an ideal investment opportunity in one of the worlds most dynamic cities."
+        "header": "Why invest in Dubai?",
+        "title-1": "Global Hub",
+        "body-1": "Dubai, a global hub with a diverse population and strong economy, connects East and West. It offers high-return opportunities for investors with its robust infrastructure and dynamic real estate market.",
+        "title-2": "Strong Market Growth",
+        "body-2": "Dubai's real estate prices have risen over 30% in the last decade, consistently attracting international investors with strong returns.",
+        "title-3": "Tax-Free Investments",
+        "body-3": "Dubai offers tax-free real estate investments with no property or capital gains taxes, making it highly attractive to international investors."
     },
     "ContactInfo": {
         "call-button": "Call",

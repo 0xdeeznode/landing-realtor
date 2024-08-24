@@ -24,7 +24,7 @@ const Why = () => {
   }, []);
 
   return (
-    <section className='relative flex flex-col w-full h-screen justify-center items-center'>
+    <section className='relative flex flex-col w-full h-screen mb-6 justify-center items-center'>
       {/* Background golden lines */}
       <div className='absolute top-0 left-0 w-full h-full overflow-hidden'>
         {[...Array(6)].map((_, i) => (
@@ -53,13 +53,13 @@ const Why = () => {
           </div>
         </div>
         <div className='flex flex-col items-center gap-12 w-[50%] md:w-[45%]'>
-          <header className='w-full text-center text-white font-bona text-[40px] leading-tight'><h3>{t('header')}</h3></header>
+          <header className='w-full text-center text-white font-bona text-[40px] md:text-5xl leading-tight text-shadow-md'><h3>{t('header')}</h3></header>
           <Image
             src='/desktop-why.jpg'
             alt='Why Invest in Dubai'
             width={500}
             height={500}
-            className='rounded-md object-cover hidden md:block'
+            className='rounded-md object-cover shadow-xl transition-transform transform duration-700 hover:scale-110 hidden md:block'
           />
           <Image
             src='/mob-why.jpg'

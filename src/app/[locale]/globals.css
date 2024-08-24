@@ -8,7 +8,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 :root {
   --gold: #AD823B;
   --silver: #c0c0c0;
@@ -17,10 +16,12 @@ html {
 body {
   background: linear-gradient(to bottom, #404040, #121212);
 }
-
 .social-logo {
   width: 15px;
   color: var(--gold);
+}
+.text-shadow-md {
+  text-shadow: 2px 2px 4px rgba(75, 75, 32, 0.687);
 }
 
 
